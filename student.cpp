@@ -95,7 +95,25 @@ public:
 		return name;
 	}
 
-	
+	bool isStudentDropOut()
+	{
+		if (CGPA < 1.5 && semester == 1)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+		if (CGPA < 1.7 && semester >= 2)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
 	
 	
 };
