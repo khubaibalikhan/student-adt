@@ -114,6 +114,24 @@ public:
 			return false;
 		}
 	}
-	
+	bool isStudentOnProbation()
+	{
+		if (CGPA >= 1.5 && CGPA < 2 && semester == 1)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+		if (CGPA >= 1.7 && CGPA < 2 && semester >= 2)
+		{
+			return true;
+		}
+		else
+		{
+			return false;
+		}
+	}
 	
 };
